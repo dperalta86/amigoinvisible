@@ -8,8 +8,8 @@ COPY pom.xml .
 COPY src ./src
 
 # Copia el JAR generado anteriormente (mvn clean package)
-COPY /target/sorteo-0.0.1-SNAPSHOT.jar /app/sorteo-0.0.1-SNAPSHOT.jar
+COPY /target/amigoinvisible-0.0.1-SNAPSHOT.jar /app/amigoinvisible-0.0.1-SNAPSHOT.jar
 
 EXPOSE 8080
 # Comando para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "/app/sorteo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/amigoinvisible-0.0.1-SNAPSHOT.jar"]
